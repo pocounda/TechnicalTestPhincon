@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PCI-PH-sil">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="127" width="414" height="686"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myPokemonCell" rowHeight="68" id="7ID-uv-70J" customClass="MyPokemonTableViewCell" customModule="TestPhincon" customModuleProvider="target">
@@ -55,14 +55,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide Left to Release" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgC-fw-ixR">
+                                <rect key="frame" x="20" y="79" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PCI-PH-sil" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="EY0-zF-Qix"/>
+                            <constraint firstItem="xgC-fw-ixR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="FZQ-yX-Qhq"/>
                             <constraint firstItem="PCI-PH-sil" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="GdK-6B-fKp"/>
                             <constraint firstItem="PCI-PH-sil" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Te9-TP-uuk"/>
+                            <constraint firstItem="xgC-fw-ixR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="35" id="aHz-Pw-8QF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xgC-fw-ixR" secondAttribute="trailing" constant="20" id="eK2-qm-2ma"/>
                             <constraint firstItem="PCI-PH-sil" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="tkW-kj-Own"/>
+                            <constraint firstItem="PCI-PH-sil" firstAttribute="top" secondItem="xgC-fw-ixR" secondAttribute="bottom" constant="27" id="w6w-fs-DEr"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Pokemon" image="person.circle.fill" catalog="system" id="ROr-cU-JQC"/>

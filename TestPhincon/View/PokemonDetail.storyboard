@@ -74,12 +74,18 @@
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XA-K4-owT">
                                 <rect key="frame" x="292" y="388" width="53" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2XA-K4-owT" secondAttribute="height" multiplier="53:21" id="Ye3-nK-SBI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abilities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhr-7X-4F5">
                                 <rect key="frame" x="69" y="388" width="67" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yhr-7X-4F5" secondAttribute="height" multiplier="67:21" id="FBH-pK-4hN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
